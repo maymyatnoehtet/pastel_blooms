@@ -8,24 +8,14 @@ const Navigation = () => {
         <li>
           <Link to="/">Home</Link>
         </li>
-        <li
-          className={
-            location.pathname === "myaccount" ? "mx-2 navActive" : "mx-2"
-          }
-        >
+        <li>
           <Link to="/myaccount">My Account</Link>
         </li>
-        <li
-          className={location.pathname === "cart" ? "mx-2 navActive" : "mx-2"}
-        >
+        <li>
           <Link to="/cart">Cart</Link>
         </li>
-        <li
-          className={
-            location.pathname === "aboutus" ? "mx-2 navActive" : "mx-2"
-          }
-        >
-          <Link to="/aboutus">About Us</Link>
+        <li>
+          <Link to="/about">About Us</Link>
         </li>
       </ul>
     </nav>

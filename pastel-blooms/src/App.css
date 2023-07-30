@@ -75,6 +75,7 @@ html {
   font-size: 4rem;
   color: #3a0f09;
   margin-bottom: 15rem;
+  text-align: center;
 }
 
 .products-container {
@@ -97,4 +98,21 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 2rem 3rem;
+}
+
+/* CART SECTION */
+.cart-items {
+  padding-top: 5rem;
+  padding-left: 15rem;
+}
+
+.cart-items ul {
+  display: flex;
+  gap: 30rem;
+}
+
+.cart-items li {
+  list-style: none;
+  font-size: 2rem;
+  color: #3a0f09;
 }
