@@ -9,7 +9,7 @@ html {
   font-size: 62.5%;
 }
 
-.main {
+.App {
   background-color: #fef8f7;
 }
 
@@ -87,6 +87,23 @@ html {
   padding-bottom: 15rem;
 }
 
+.product-card {
+  box-shadow: 0.7rem 0.7rem 0.5rem rgb(109, 109, 109, 0.2);
+  transition: box-shadow 0.3s;
+  position: relative;
+}
+
+.product-card:hover {
+  box-shadow: 0.7rem 0.7rem 1rem rgb(109, 109, 109, 0.2);
+}
+
+.cart-btn {
+  position: absolute;
+  right: 3.5rem;
+  top: 3rem;
+  padding: 0.5rem;
+}
+
 .product-img {
   width: 100%;
   height: 60rem;
@@ -115,4 +132,29 @@ html {
   list-style: none;
   font-size: 2rem;
   color: #3a0f09;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 50rem;
+}
+
+.about-section h1 {
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom: 4rem;
+  font-size: 5rem;
+}
+
+.about-section h2 {
+  padding-top: 3rem;
+  font-size: 3rem;
+}
+
+.about-section p {
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  text-align: justify;
 }
