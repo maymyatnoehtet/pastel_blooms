@@ -8,21 +8,6 @@ import About from "./components/About";
 
 function App() {
   return (
-    // <Router>
-    //   <div>
-    //     <div className="header">
-    //       <Header />
-    //     </div>
-    //     <div>
-    //       <main>
-    //         <Routes>
-    //           <Route path="/" element=<Home /> />
-    //           <Route path="/myaccount" element=<Account />></Route>
-    //         </Routes>
-    //       </main>
-    //     </div>
-    //   </div>
-    // </Router>
     <Router>
       <div className="App">
         <div className="header">
