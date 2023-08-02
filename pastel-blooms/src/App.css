@@ -12,23 +12,26 @@ html {
 .App {
   background-color: #fef8f7;
 }
-
+/* ############################################################ */
 /* HEADER SECTION */
+/* ############################################################ */
 .header-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fbe9e6;
   padding: 2rem 3rem;
-  /* margin-bottom: 30px; */
 }
 
 .header-section h1 {
   font-size: 5rem;
+  letter-spacing: 0.75rem;
   color: #3a0f09;
 }
 
+/* ############################################################ */
 /* NAVIGATION SECTION */
+/* ############################################################ */
 .nav-section {
 }
 
@@ -39,11 +42,24 @@ html {
 
 .nav-links li {
   list-style: none;
-  font-size: 2.5rem;
-  color: #3a0f09;
 }
 
+.nav-links li a {
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(142, 142, 142, 0.5);
+  color: #3a0f09;
+  transition: border-bottom 0.1s;
+}
+
+.nav-links li a:hover {
+  padding-bottom: 0.5rem;
+  border-bottom: dotted 0.1rem #3a0f09;
+}
+
+/* ############################################################ */
 /* LANDING SECTION */
+/* ############################################################ */
 .landing-section {
 }
 
@@ -55,7 +71,7 @@ html {
       rgba(251, 233, 230, 0.65),
       rgba(255, 255, 255, 0.25)
     ),
-    url("../public/landing-image.jpg") no-repeat center / cover;
+    url("../public/imgs/landing-image.jpg") no-repeat center / cover;
   position: relative;
   margin-bottom: 7rem;
 }
@@ -63,16 +79,21 @@ html {
 .welcome-txt {
   position: absolute;
   z-index: 10;
-  font-size: 3.5rem;
+  font-size: 3.4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
   color: #3a0f09;
   bottom: 15%;
   left: 10%;
   width: 45%;
 }
 
+/* ############################################################ */
 /* PRODUCTS SECTION */
+/* ############################################################ */
 .products-section h1 {
   font-size: 4rem;
+  letter-spacing: 0.5rem;
   color: #3a0f09;
   margin-bottom: 15rem;
   text-align: center;
@@ -111,13 +132,16 @@ html {
 
 .product-info {
   font-size: 2.5rem;
+  letter-spacing: 0.1rem;
   background-color: rgb(251, 233, 230);
   display: flex;
   justify-content: space-between;
   padding: 2rem 3rem;
 }
 
+/* ############################################################ */
 /* CART SECTION */
+/* ############################################################ */
 .cart-items {
   padding-top: 5rem;
   padding-left: 15rem;
@@ -134,7 +158,9 @@ html {
   color: #3a0f09;
 }
 
+/* ############################################################ */
 /* ABOUT SECTION */
+/* ############################################################ */
 .about-section {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
