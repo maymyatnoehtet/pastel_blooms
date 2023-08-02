@@ -2,11 +2,11 @@ import React from "react";
 import Landing from "./Landing";
 import Products from "./Products";
 
-const Home = () => {
+const Home = ({ products, onAddToCart }) => {
   return (
     <section className="main">
       <Landing />
-      <Products />
+      <Products products={products} onAddToCart={onAddToCart} />
     </section>
   );
 };
