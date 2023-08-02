@@ -100,15 +100,18 @@ html {
 }
 
 .products-container {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10rem;
+  place-items: center;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 15rem;
 }
 
 .product-card {
+  width: 60rem;
   box-shadow: 0.7rem 0.7rem 0.5rem rgb(109, 109, 109, 0.2);
   transition: box-shadow 0.3s;
   position: relative;
@@ -167,21 +170,81 @@ html {
   padding-bottom: 50rem;
 }
 
-.about-section h1 {
+.about-h1-wrapper {
+  padding: 0 5%;
+  margin-bottom: 10rem;
+}
+
+.about-h1-wrapper h1 {
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
   text-align: center;
   padding-top: 5rem;
   margin-bottom: 4rem;
-  font-size: 5rem;
 }
 
-.about-section h2 {
-  padding-top: 3rem;
+.about-h1-wrapper p {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 2;
+  padding: 0 25%;
+}
+
+.about-h2-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  padding: 0 5%;
+}
+
+.about-h2-wrapper {
+  background-color: rgba(251, 233, 230, 0.5);
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem #eee;
+  padding: 1rem 2rem;
+}
+
+.about-h2-wrapper h2 {
   font-size: 3rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
 }
 
-.about-section p {
-  padding-top: 1rem;
-  font-size: 2.5rem;
-  text-align: justify;
-  line-height: 3.5rem;
+.about-h2-wrapper p {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 2;
+}
+
+/* ############################################################ */
+/* MEDIA QUERY SECTION */
+/* ############################################################ */
+@media (min-width: 3200px) {
+  .products-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about-h2-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 2300px) {
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1400px) {
+  .products-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    row-gap: 10rem;
+  }
+
+  .about-h2-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
