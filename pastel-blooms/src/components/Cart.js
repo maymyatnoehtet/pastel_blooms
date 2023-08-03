@@ -10,6 +10,7 @@ const Cart = ({ cartItems }) => {
     return url;
   };
 
+  // Calculate total price
   const total = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0
@@ -34,7 +35,6 @@ const Cart = ({ cartItems }) => {
                 alt={item.image.filename}
               ></img>
             </div>
-
             <p>{item.name}</p>
             <p>${item.price}</p>
             <p>{item.quantity}</p>

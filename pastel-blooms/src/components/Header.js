@@ -1,12 +1,12 @@
 import React from "react";
 import Navigation from "./Navigation";
 
-const Header = () => {
+const Header = ({ cartItems }) => {
   return (
     <header>
       <section className="header-section">
         <h1> Pastel Blooms </h1>
-        <Navigation />
+        <Navigation cartItems={cartItems} />
       </section>
     </header>
   );

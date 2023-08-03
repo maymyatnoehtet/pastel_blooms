@@ -56,7 +56,7 @@ function App() {
     <Router>
       <div className="App">
         <div className="header">
-          <Header />
+          <Header cartItems={cartItems} />
         </div>
         <div>
           <main>

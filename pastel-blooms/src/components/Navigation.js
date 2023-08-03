@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Navigation = () => {
+const Navigation = ({ cartItems }) => {
+  // Calculate total quantity
+  const totalQty = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+
   return (
     <nav className="nav-section">
       <ul className="nav-links">
@@ -13,6 +16,7 @@ const Navigation = () => {
         <li>
           <Link to="/cart">Cart</Link>
         </li>
+        <li className="cart-qty">{totalQty}</li>
       </ul>
     </nav>
   );

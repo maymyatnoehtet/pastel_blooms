@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import FlashMessage from "./FlashMessage";
 
 const Product = ({ product, onAddToCart }) => {
+  const [showMessage, setShowMessage] = useState(false);
+
+  const flashMessage = () => {
+    setShowMessage(true);
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 1000);
+  };
+
   // Convert image buffer data to blob url
   const convertBufferToUrl = (imageData) => {
     const { contentType, data } = imageData;
@@ -12,7 +22,19 @@ const Product = ({ product, onAddToCart }) => {
 
   return (
     <div className="product-card">
-      <button className="cart-btn" onClick={() => onAddToCart(product)}>
+      {showMessage && (
+        <FlashMessage
+          message={`${product.name} has been added to cart.`}
+          duration={1000}
+        />
+      )}
+      <button
+        className="cart-btn"
+        onClick={() => {
+          onAddToCart(product);
+          flashMessage();
+        }}
+      >
         Cart
       </button>
       <img
